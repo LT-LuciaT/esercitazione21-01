@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      input {
+        padding: 5px;
+        font-size: 16px;
+      }
+      button {
+        padding: 5px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      .container {
+        margin-top: 20px;
+      }
+      .counter {
+        font-size: 48px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form di Registrazione</h1>
+
+    <div class="container">
+      <input type="text" id="nameInput" placeholder="Inserisci il tuo nome" />
+
+      <button onclick="saveName()">Salva Nome</button>
+
+      <button onclick="removeName()">Rimuovi Nome</button>
+    </div>
+
+    <div class="counter">
+      <p>Tempo trascorso: <span id="counterDisplay">0</span> secondi</p>
+    </div>
+
+    <script src="obj.js"></script>
+  </body>
+</html>
